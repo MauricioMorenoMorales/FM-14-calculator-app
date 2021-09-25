@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+  font-family: FontFamilyBody;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 1.8rem;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+figure {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+:root {
+  --main-background: #3a4764;
+  --keypad-background: #232c43;
+  --screen-background: #182034;
+  --key-background: #eae3dc;
+  --key-shadow: #b4a597;
+  --secondary-key-background: #637097;
+  --secondary-key-shadow: #404e72;
+  --accent-key-background: #d03f2f;
+  --accent-key-shadow: #93261a;
+  --text-color: #eae3dc;
+  --key-text-color: #444b5a;
+  --secondary-text-color: #eae3dc;
+  --accent-key-color: #eae3dc;
+  --theme-button-position: flex-start;
+}
+html {
+  background-color: var(--key-text-color);
+}

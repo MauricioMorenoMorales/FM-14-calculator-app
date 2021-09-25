@@ -1,4 +1,3 @@
-"use strict";
 var root = document.documentElement;
 var colorThemes = [
     {
@@ -14,8 +13,7 @@ var colorThemes = [
         textColor: 'hsl(30, 25%, 89%)',
         keyTextColor: 'hsl(221, 14%, 31%)',
         secondaryKeyTextColor: 'hsl(30, 25%, 89%)',
-        accentKeyTextColor: 'hsl(30, 25%, 89%)',
-        themeButtonPosition: 'flex-start',
+        accentKeyTextColor: 'hsl(30, 25%, 89%)'
     },
     {
         mainBackground: 'hsl(0, 0%, 90%)',
@@ -30,8 +28,7 @@ var colorThemes = [
         textColor: 'hsl(60, 10%, 19%)',
         keyTextColor: 'hsl(60, 10%, 19%)',
         secondaryKeyTextColor: 'hsl(0, 0%, 90%)',
-        accentKeyTextColor: 'hsl(0, 0%, 90%)',
-        themeButtonPosition: 'center',
+        accentKeyTextColor: 'hsl(0, 0%, 90%)'
     },
     {
         mainBackground: 'hsl(268, 75%, 9%)',
@@ -46,7 +43,7 @@ var colorThemes = [
         textColor: 'hsl(52, 100%, 62%)',
         keyTextColor: 'hsl(52, 100%, 62%)',
         secondaryKeyTextColor: 'hsl(0, 0%, 90%)',
-        accentKeyTextColor: 'hsl(0, 0, 100%)',
+        accentKeyTextColor: 'hsl(0, 0, 100%)'
     },
 ];
 document.addEventListener('click', function (event) {

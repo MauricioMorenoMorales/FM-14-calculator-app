@@ -5,20 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Calculator app</title>
 </head>
-<style>
-  :root {
-    --background: hsl(6, 63%, 50%);
-  }
-
-  html {
-    background-color: var(--background);
-  }
-</style>
+<link rel="stylesheet" href="./css/styles.css">
 
 <body>
-
+  <main>
+    <div class="header">
+      <p class="header__title">calc</p>
+      <div class="header__theme-switcher">
+        <p class="header__theme-switcher__title">Theme</p>
+        <div class="header__theme-switcher__button">
+          <div class="header__theme-switcher__button__numbers">
+            <p class="header__theme-switcher__button__numbers__item">1</p>
+            <p class="header__theme-switcher__button__numbers__item">2</p>
+            <p class="header__theme-switcher__button__numbers__item">3</p>
+          </div>
+          <div class="header__theme-switcher__button__container">
+            <div class="header__theme-switcher__button__inner-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="screen">399,981</p>
+    <div class="keypad">
+      <button class="keypad__button">7</button>
+      <button class="keypad__button">8</button>
+      <button class="keypad__button">9</button>
+      <button class="keypad__button secondary">del</button>
+      <button class="keypad__button">4</button>
+      <button class="keypad__button">5</button>
+      <button class="keypad__button">6</button>
+      <button class="keypad__button">+</button>
+      <button class="keypad__button">1</button>
+      <button class="keypad__button">2</button>
+      <button class="keypad__button">3</button>
+      <button class="keypad__button">-</button>
+      <button class="keypad__button">.</button>
+      <button class="keypad__button">0</button>
+      <button class="keypad__button">/</button>
+      <button class="keypad__button">x</button>
+      <button class="keypad__button secondary reset">reset</button>
+      <button class="keypad__button accent">=</button>
+    </div>
+    .
+  </main>
 
 
   <!-- <div class="attribution">
