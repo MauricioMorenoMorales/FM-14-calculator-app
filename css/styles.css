@@ -43,5 +43,51 @@ img {
   --theme-button-position: flex-start;
 }
 html {
-  background-color: var(--key-text-color);
+  background-color: var(--main-background);
+  font-family: 'Spartan', sans-serif;
+}
+main {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.header {
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  font-size: 3.5rem;
+}
+.header__theme-switcher {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__theme-switcher__button {
+  width: 75px;
+}
+.header__theme-switcher__button__numbers {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__theme-switcher__button__numbers__item {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.header__theme-switcher__button__container {
+  height: 30px;
+  width: 100%;
+  background-color: var(--keypad-background);
+  border-radius: 15px;
+  display: flex;
+  padding: 0 5px;
+  justify-content: var(--theme-button-position);
+  align-items: center;
+}
+.header__theme-switcher__button__container__inner-circle {
+  height: 24px;
+  width: 24px;
+  margin-bottom: 1px;
+  background-color: var(--accent-key-background);
+  border-radius: 50%;
 }

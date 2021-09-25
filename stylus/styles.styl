@@ -18,4 +18,43 @@
 	--theme-button-position flex-start
 
 html
-	background-color keyTextColor
+	background-color mainBackground
+	font-family ffPrimary
+
+main
+	max-width 450px
+	margin 0 auto
+
+.header
+	color textColor
+	display flex
+	justify-content space-between
+	align-items center
+	&__title
+		font-size 3.5rem
+	&__theme-switcher
+		display flex
+		justify-content flex-end
+		&__button
+			width 75px
+			&__numbers
+				display flex
+				justify-content space-evenly
+				&__item
+					margin 0
+					font-size 1.4rem
+			&__container
+				height 30px
+				width 100%
+				background-color keypadBackground
+				border-radius 15px
+				display flex
+				padding 0 5px
+				justify-content var(--theme-button-position)
+				align-items center
+				&__inner-circle
+					height 24px
+					width 24px
+					margin-bottom 1px
+					background-color accentKeyBackground
+					border-radius 50%
