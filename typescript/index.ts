@@ -7,7 +7,7 @@ interface IColorTheme {
 	keyBackground: string;
 	keyShadow: string;
 	secondaryKeyBackground: string;
-	secondaryShadow: string;
+	secondaryKeyShadow: string;
 	accentKeyBackground: string;
 	accentKeyShadow: string;
 	textColor: string;
@@ -25,7 +25,7 @@ const colorThemes: Array<IColorTheme> = [
 		keyBackground: 'hsl(30, 25%, 89%)',
 		keyShadow: 'hsl(28, 16%, 65%)',
 		secondaryKeyBackground: 'hsl(225, 21%, 49%)',
-		secondaryShadow: 'hsl(224, 28%, 35%)',
+		secondaryKeyShadow: 'hsl(224, 28%, 35%)',
 		accentKeyBackground: 'hsl(6, 63%, 50%)',
 		accentKeyShadow: 'hsl(6, 70%, 34%)',
 		textColor: 'hsl(30, 25%, 89%)',
@@ -41,7 +41,7 @@ const colorThemes: Array<IColorTheme> = [
 		keyBackground: 'hsl(45, 7%, 89%)',
 		keyShadow: 'hsl(35, 11%, 61%)',
 		secondaryKeyBackground: 'hsl(185, 42%, 37%)',
-		secondaryShadow: 'hsl(185, 58%, 25%)',
+		secondaryKeyShadow: 'hsl(185, 58%, 25%)',
 		accentKeyBackground: 'hsl(25, 98%, 40%)',
 		accentKeyShadow: 'hsl(25, 99%, 27%)',
 		textColor: 'hsl(60, 10%, 19%)',
@@ -57,13 +57,14 @@ const colorThemes: Array<IColorTheme> = [
 		keyBackground: 'hsl(268, 47%, 21%)',
 		keyShadow: 'hsl(290, 70%, 36%)',
 		secondaryKeyBackground: 'hsl(281, 89%, 26%)',
-		secondaryShadow: 'hsl(285, 91%, 52%)',
+		secondaryKeyShadow: 'hsl(285, 91%, 52%)',
 		accentKeyBackground: 'hsl(176, 100%, 44%)',
 		accentKeyShadow: 'hsl(177, 92%, 70%)',
 		textColor: 'hsl(52, 100%, 62%)',
 		keyTextColor: 'hsl(52, 100%, 62%)',
 		secondaryKeyTextColor: 'hsl(0, 0%, 90%)',
 		accentKeyTextColor: 'hsl(0, 0, 100%)',
+		themeButtonPosition: 'flex-end',
 	},
 ];
 document.addEventListener('click', event => {

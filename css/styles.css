@@ -38,8 +38,8 @@ img {
   --accent-key-shadow: #93261a;
   --text-color: #eae3dc;
   --key-text-color: #444b5a;
-  --secondary-text-color: #eae3dc;
-  --accent-key-color: #eae3dc;
+  --secondary-key-text-color: #eae3dc;
+  --accent-key-text-color: #eae3dc;
   --theme-button-position: flex-start;
 }
 html {
@@ -47,7 +47,7 @@ html {
   font-family: 'Spartan', sans-serif;
 }
 main {
-  max-width: 450px;
+  max-width: 400px;
   margin: 0 auto;
 }
 .header {
@@ -55,6 +55,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
 .header__title {
   font-size: 3.5rem;
@@ -62,6 +63,10 @@ main {
 .header__theme-switcher {
   display: flex;
   justify-content: flex-end;
+}
+.header__theme-switcher__title {
+  margin-right: 10px;
+  margin-top: 22px;
 }
 .header__theme-switcher__button {
   width: 75px;
@@ -87,7 +92,54 @@ main {
 .header__theme-switcher__button__container__inner-circle {
   height: 24px;
   width: 24px;
-  margin-bottom: 1px;
+  margin-top: 1px;
   background-color: var(--accent-key-background);
   border-radius: 50%;
+}
+.screen {
+  margin: 0;
+  height: 80px;
+  background-color: var(--screen-background);
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  font-size: 3.5rem;
+  color: var(--text-color);
+}
+.keypad {
+  display: grid;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: var(--keypad-background);
+  grid-template-columns: repeat(4, 25%);
+  padding: 20px;
+}
+.keypad__button {
+  margin: 7px;
+  height: 60px;
+  background-color: var(--key-background);
+  border: none;
+  font-size: 3.3rem;
+  padding-top: 10px;
+  font-family: 'Spartan', sans-serif;
+  box-shadow: 0px 5px 1px 0px var(--key-shadow);
+}
+.keypad__button.secondary {
+  background-color: var(--secondary-key-background);
+  box-shadow: 0px 5px 1px 0px var(--secondary-key-shadow);
+  color: var(--secondary-key-text-color);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.keypad__button.secondary.reset {
+  grid-column: 1/3;
+}
+.keypad__button.accent {
+  background-color: var(--accent-key-background);
+  box-shadow: 0px 5px 1px 0px var(--accent-key-shadow);
+  color: var(--accent-key-text-color);
+  grid-column: 3/5;
+  font-size: 2rem;
 }
