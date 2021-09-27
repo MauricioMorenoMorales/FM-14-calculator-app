@@ -49,6 +49,7 @@ var colorThemes = [
         themeButtonPosition: 'flex-end'
     },
 ];
+var themeClickCounter;
 document.addEventListener('click', function (event) {
-    root.style.setProperty('--background', colorThemes[2].mainBackground);
+    root.style.setProperty('--theme-button-position', colorThemes[2].themeButtonPosition);
 });
